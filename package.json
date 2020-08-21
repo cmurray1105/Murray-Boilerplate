@@ -1,45 +1,27 @@
 {
-  "name": "challenge_1",
+  "name": "testing",
   "version": "1.0.0",
-  "description": "Historical event finder",
+  "description": "testing",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage",
-    "updateSnap": "npm test -- -u",
-    "build": "webpack -w --config webpack.config.js --mode production",
-    "start": "webpack-dev-server --open"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "start-webpack": "webpack --watch --mode development --inline --progress"
   },
-  "jest": {
-    "collectCoverage": true,
-    "coverageReporters": [
-      "html"
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Kptkrunch/hratx48-mini-apps-2.git"
-  },
-  "author": "Joshua Edwards",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Kptkrunch/hratx48-mini-apps-2/issues"
-  },
-  "homepage": "https://github.com/Kptkrunch/hratx48-mini-apps-2#readme",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "hooks": "^0.3.2",
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-react": "^7.8.3",
+    "axios": "^0.19.2",
+    "babel-loader": "^8.1.0",
+    "express": "^4.17.1",
     "path": "^0.12.7",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.10.5",
-    "@babel/preset-env": "^7.10.4",
-    "@babel/preset-react": "^7.10.4",
-    "@types/jest": "^26.0.5",
-    "babel-loader": "^8.1.0",
-    "react-test-renderer": "^16.13.1",
+    "react-dom": "^16.13.1",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-cli": "^3.3.12"
   }
 }
