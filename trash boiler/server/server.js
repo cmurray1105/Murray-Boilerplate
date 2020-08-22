@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const PORT = '8008'
+const PORT = 5000
 
 
-app.use(express.static(path.join(__dirname, '../client/dist')));
+app.use(express.static(path.join(__dirname, '../frontEnd/dist')));
 app.use(express.json())
 
 
